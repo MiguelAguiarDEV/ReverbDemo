@@ -46,7 +46,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
 
    Abre el archivo `.env` y asegúrate de que las siguientes variables están configuradas correctamente:
 
-   ```
+   ```env
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
