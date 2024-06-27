@@ -11,7 +11,7 @@ Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
 - Composer
 - Node.js
 - NPM (Node Package Manager)
-- Pusher (o Laravel Websockets) para la funcionalidad de broadcasting
+- Laravel Reverb para la funcionalidad de broadcasting
 
 ## Instalación
 
@@ -75,13 +75,13 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
    Asegúrate de que tienes una base de datos configurada y que las variables DB_* en tu archivo `.env` están configuradas correctamente. Luego ejecuta:
 
    ```sh
-   php artisan migrate
+   php artisan migrate --seed
    ```
 
 7. **Compilar los assets de frontend:**
 
    ```sh
-   npm run dev
+   npm run build
    ```
 
 8. **Iniciar el servidor de desarrollo:**
@@ -90,12 +90,12 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
    php artisan serve
    ```
 
-9. **Iniciar el servidor de broadcasting (Pusher o Laravel Websockets):**
+9. **Iniciar el servidor de broadcasting (Reverb):**
 
    Si estás utilizando Pusher, no necesitas hacer nada más aquí. Si estás utilizando Laravel Websockets, asegúrate de que el servidor de websockets esté funcionando:
 
    ```sh
-   php artisan websockets:serve
+   php artisan reverb:start
    ```
 
 10. **Abrir la aplicación en tu navegador:**
@@ -107,7 +107,7 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
 Para probar la funcionalidad de chat en tiempo real con dos usuarios diferentes:
 
 1. Abre una ventana de navegador normal e inicia sesión como un usuario.
-2. Abre una ventana de navegador en modo incógnito/privado e inicia sesión como otro usuario.
+2. Abre una ventana de navegador en modo incógnito/privado e inicia sesión como otro usuario. // Sino en otro navegador diferente
 3. Envía mensajes desde ambos usuarios y verifica que se actualizan en tiempo real.
 
 ## Recursos adicionales
@@ -115,7 +115,7 @@ Para probar la funcionalidad de chat en tiempo real con dos usuarios diferentes:
 - [Laravel Documentation](https://laravel.com/docs)
 - [Livewire Documentation](https://laravel-livewire.com/docs)
 - [Laravel Echo Documentation](https://laravel.com/docs/8.x/broadcasting)
-- [Pusher Documentation](https://pusher.com/docs)
+- [Reverb Documentation](https://reverb.laravel.com)
 
 ## Contribuir
 
