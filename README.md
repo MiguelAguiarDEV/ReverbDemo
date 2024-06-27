@@ -51,8 +51,8 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
    DB_HOST=127.0.0.1
    DB_PORT=3306
    DB_DATABASE=reverdemo
-   DB_USERNAME=miguel  # Change this to your database username
-   DB_PASSWORD=Miguel36y # Change this to your database password
+   DB_USERNAME=Nombre de usario Mysql  # Change this to your database username
+   DB_PASSWORD=Contraseña Mysql # Change this to your database password
    ```
    
 
