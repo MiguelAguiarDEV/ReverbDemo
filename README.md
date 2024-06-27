@@ -7,7 +7,7 @@ Esta es una aplicación de chat en tiempo real construida con Laravel, Livewire 
 
 Antes de comenzar, asegúrate de tener instalados los siguientes componentes:
 
-- PHP >= 7.3
+- PHP >= 8.2
 - Composer
 - Node.js
 - NPM (Node Package Manager)
@@ -45,6 +45,16 @@ Sigue estos pasos para configurar y ejecutar el proyecto:
    ```
 
    Abre el archivo `.env` y asegúrate de que las siguientes variables están configuradas correctamente:
+
+   ```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=reverdemo
+   DB_USERNAME=miguel  # Change this to your database username
+   DB_PASSWORD=Miguel36y # Change this to your database password
+   ```
+   
 
    ```env
    PUSHER_APP_ID=your-app-id
